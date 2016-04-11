@@ -3,6 +3,7 @@ package model;
 
 /**
  * <!-- begin-user-doc -->
+ * Will hold statistics about the software.
  * <!--  end-user-doc  -->
  * @generated
  */
@@ -11,6 +12,7 @@ public class StatsPage
 {
 	/**
 	 * <!-- begin-user-doc -->
+	 * Will hold the preparation time (in minutes) per month spent preparing food.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
@@ -20,6 +22,7 @@ public class StatsPage
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Will store the monthly profit (in US dollars) from orders placed.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
@@ -29,6 +32,7 @@ public class StatsPage
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Will store the frequency that the dish most ordered was ordered.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
@@ -38,6 +42,7 @@ public class StatsPage
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Will store the frequency that the dish least ordered was ordered.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
@@ -47,6 +52,7 @@ public class StatsPage
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Will store the name of the dish ordered least frequently.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
@@ -56,6 +62,7 @@ public class StatsPage
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Will store the name of the dish ordered most frequently.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
@@ -65,6 +72,7 @@ public class StatsPage
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Constructor to instantiate an object of the StatsPage class.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
@@ -74,140 +82,146 @@ public class StatsPage
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Assign the monthly prep time based on the integer argument.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public void setMonthlyPrepTime(int monthlyPrepTime) {
-		// TODO implement me
+		this.monthlyPrepTime = monthlyPrepTime;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Returns the monthly prep time.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public int getMonthlyPrepTime() {
-		// TODO implement me
-		return 0;
+		return this.monthlyPrepTime;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Assign the monthly profti based on the integer argument.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public void setMonthlyProfit(int monthlyProfit) {
-		// TODO implement me
+		this.monthlyProfit = monthlyProfit;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Returns the monthly profit.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public int getMonthlyProfit() {
-		// TODO implement me
-		return 0;
+		return this.monthlyProfit;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Sets most dishes ordered frequency based on the integer argument.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public void setMostDishes(int mostDishesOrdered) {
-		// TODO implement me
+		this.mostDishesOrdered = mostDishesOrdered;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Returns the most dishes ordered count
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public int getMostDishes() {
-		// TODO implement me
-		return 0;
+		return this.mostDishesOrdered;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Assigns the name of the dish ordered most frequently based on the String argument.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public void setMostDishesName(String mostDishesName) {
-		// TODO implement me
+		this.mostDishesName = mostDishesName;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Returns the name of the dish ordered most frequently.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public String getMostDishesName() {
-		// TODO implement me
-		return "";
+		return this.mostDishesName;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Assigns the frequency of the dish ordered least frequently based on the integer argument.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public void setLeastDishes(int leastDishesOrdered) {
-		// TODO implement me
+		this.leastDishesOrdered = leastDishesOrdered;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Returns the dish ordered least frequently.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public int getLeastDishes() {
-		// TODO implement me
-		return 0;
+		return this.leastDishesOrdered;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Assigns the name of the dish ordered least frequently based on the String argument.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public void setLeastDishesName(int leastDishesName) {
-		// TODO implement me
+		this.leastDishesName = leastDishesName;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Returns the name of the dish ordered least frequently.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public String getLeastDishesName() {
-		// TODO implement me
-		return "";
+		return this.leastDishesName;
 	}
 
 }
