@@ -62,13 +62,28 @@ public class MenuEditor
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Add a category to the menu.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public void addCategory(String categoryName) {
-		// TODO implement me
+		if(menu.categoryArray == null)
+		{
+			menu.initializeCategories(10);
+		}
+		else
+		{
+			for(int i = 0; i < menu.categoryArray.length; i++)
+			{
+				if(menu.categoryArray[i] == null)
+				{
+					menu.categoryArray[i].setCategoryName(categoryName);
+					menu.categoryArray[i].initializeItems(10);
+				}
+			}
+		}
 	}
 
 	/**
@@ -78,7 +93,7 @@ public class MenuEditor
 	 * @ordered
 	 */
 	
-	public void addItem(String itemName, int itemPrice, int itemPrepTime) {
+	public void addItem(String categoryName, String itemName, int itemPrice, int itemPrepTime) {
 		// TODO implement me
 	}
 
