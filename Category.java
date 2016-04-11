@@ -51,7 +51,6 @@ public class Category
 	 */
 	
 	public String getCategoryName() {
-		// TODO implement me
 		return this.categoryName;
 	}
 
