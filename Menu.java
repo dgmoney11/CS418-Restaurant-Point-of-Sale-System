@@ -3,6 +3,7 @@ package model;
 
 /**
  * <!-- begin-user-doc -->
+ * A menu for a restaurant.
  * <!--  end-user-doc  -->
  * @generated
  */
