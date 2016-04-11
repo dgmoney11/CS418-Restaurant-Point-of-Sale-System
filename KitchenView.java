@@ -80,7 +80,7 @@ public class KitchenView
 				{
 					orderList[i] = orderList[j];
 				}
-				
+				break;
 			}
 		}
 	}
