@@ -41,15 +41,25 @@ public class NewOrder
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Sent from the start menu, allows orders to be sent to the kitchen.
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	 private KitchenView kitchenView;
+	
+	/**
+	 * <!-- begin-user-doc -->
 	 * Constructor for a NewOrder object. Initializes data fields.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
-	public NewOrder(){
+	public NewOrder(KitchenView kitchenView){
 		super();
 		this.itemList = new MenuItem[5];
 		this.commentList = new String[5];
 		this.totalPrice = 0;
+		this.kitchenView = kitchenView;
 	}
 
 	/**
@@ -139,13 +149,24 @@ public class NewOrder
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Remove an item from the order list.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public void removeFromOrder(MenuItem item) {
-		// TODO implement me
+		for(int i = 0; i < itemList.length; i++)
+		{
+			if(itemList[i] == item)
+			{
+				for(int j = i+1; j < itemList.length; j++)
+				{
+					itemList[i] = itemList[j];
+				}
+				break;
+			}
+		}
 	}
 
 	/**
@@ -198,24 +219,31 @@ public class NewOrder
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Cancel an Order. Nullifies all itemList values and comments.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
-	public void cancelSelection(MenuItem parameter) {
-		// TODO implement me
+	public void cancelOrder() {
+		for(int i = 0; i < itemList.length; i++)
+		{
+			this.itemList[i] = null;
+			this.commentList[i] = null;
+			this.totalPrice = 0;
+		}
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * Add the order to the list of orders that are visible to the kitchen view.
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
 	
 	public void sendToKitchen() {
-		// TODO implement me
+		kitchenView.addOrder(this);
 	}
 
 }
