@@ -59,9 +59,9 @@ public class StartMenu
 	public StartMenu(){
 		super();
 		createMenuEditor();
-		createNewOrder();
 		createStatsPage();
 		createKitchenView();
+		createNewOrder();
 	}
 
 	/**
@@ -102,7 +102,7 @@ public class StartMenu
 	public void createStatsPage() {
 		if(this.newOrder == null)
 		{
-			mewOrder = NewOrder();
+			newOrder = NewOrder(kitchenView);
 		}
 	}
 
