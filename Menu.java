@@ -1,48 +1,21 @@
-package model;
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package menu;
 
 /**
- * <!-- begin-user-doc -->
- * A menu for a restaurant.
- * <!--  end-user-doc  -->
- * @generated
+ *
+ * @author keithburgess
  */
+public class Menu {
 
-public class Menu
-{
-	/**
-	 * <!-- begin-user-doc -->
-	 * A list of categories, Each category holds a list of items.
-	 * A category for this software would be like 
-	 * breakfast, lunch, dinner, etc..
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	private Category categoryArray[];
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * Constructor to create a Category object.
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public Menu(){
-		super();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * Initialize the categories to the number in the int parameter.
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public void initializeCategories(int parameter) {
-		this.categoryArray = new categoryArray[parameter];
-	}
-
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("hello world");
+    }
+    
 }
-
